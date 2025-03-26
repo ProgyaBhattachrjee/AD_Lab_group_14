@@ -40,13 +40,17 @@ const Sidebar = () => {
   return (
     <div
       style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
         width: "300px",
-        height: "120vh", // Increased height to 120vh for longer sidebar
+        height: "120vh", 
         background: "#f8f9fa",
-        borderRight: "2px solid #ddd",  // Border for the sidebar
-        boxShadow: "2px 0 5px rgba(0, 0, 0, 0.1)",  // Box shadow for the sidebar
+        borderRight: "2px solid #ddd",  
+        boxShadow: "2px 0 5px rgba(0, 0, 0, 0.1)",  
         overflowY: "auto",
-        padding: "10px",  // Padding for a bit of spacing
+        padding: "10px",
+        zIndex: 1000,
       }}
     >
       <h3 style={{ textAlign: "center", marginBottom: "20px" }}>Stock Prices</h3>
@@ -58,7 +62,7 @@ const Sidebar = () => {
               display: "flex",
               justifyContent: "space-between",
               padding: "12px",
-              borderBottom: "1px solid #ddd",  // Border between items
+              borderBottom: "1px solid #ddd", 
               alignItems: "center",
             }}
           >
@@ -82,3 +86,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
